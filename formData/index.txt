@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>DAA Registration</title>
+  </head>
+  <style> 
+    select {
+      width: 60%;
+      color: rgb(168, 168, 194);
+      padding: 16px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: transparent;
+      border-bottom: 1px solid #5f5fb4;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      color: #e7e8ec;
+      border: 2px solid rgb(81, 94, 209);
+      border-radius: 4px;
+      background-color: transparent;
+      font-size: 16px;
+      resize: none;
+  }
+    </style>
+  <body >
+
+   
+    
+ <div class="row">
+      
+      <section class="section">
+        
+    <header style="text-align: center;">
+      
+      <img style="height: 80px;" src="./DAA logo.png" alt="" >
+      <h2>DIRECTORATE OF ALUMNI AFFAIRS</h2>
+      <h2>PRESENTS</h2>
+
+          <h3> REGISTRATION FORM </h3>
+          <!-- <img src=".//favicon-32x32.png" alt=""> -->
+
+          
+          <h4>Register Now!!!</h4>
+        </header>
+        <main >
+          <form method="post" autocomplete="off" name="google-sheet">
+            <div class="form-item box-item">
+              <input type="text" name="Name" placeholder="Name*" value=""
+              required="" />
+            
+            </div>
+            <div class="form-item box-item">
+              <input
+                type="text"
+                name="Phone"
+                placeholder="Whatsapp Number"
+                value=""
+                required=""
+                data-count="10"
+              />
+            </div>
+
+            <div class="form-item box-item">
+              <input
+                type="email"
+                name="Email"
+                placeholder="SRM official Email*"
+                value=""
+                required=""
+                
+              />
+            
+            </div>
+
+            
+              <div class="form-item-triple">
+                <div class="radio-label">
+                  <label class="label">Gender</label>
+                </div>
+                <div class="form-item">
+                  <input
+                    id="Male"
+                    type="radio"
+                    name="Almuni/Student"
+                    value="Male"
+                    data-once
+                  />
+                  <label for="Male">Male</label>
+                </div>
+                <div class="form-item">
+                  <input
+                    id="Female"
+                    type="radio"
+                    name="Almuni/Student"
+                    value="Female"
+                    data-once
+                  />
+                  <label for="Female">Female</label>
+                </div>
+              </div>
+            
+              <div class="form-item">
+                <label class="label">Year of studing</label>
+                    <select id="country" name="country">
+                      <option value="technical">I Year</option>
+                      <option value="corporate">II Year</option>
+                      <option value=";g;fxl;">III Year</option>
+                    </select>
+              </div>
+
+            <div class="form-item box-item">
+              <input
+                type="text"
+                name="Registration_Number"
+                placeholder="Registration Number"
+              />
+            
+              <div class="form-item">
+                <label class="label">Preference 1</label>
+                    <select id="country" name="country">
+                      <option value="technical">technical</option>
+                      <option value="corporate">hni</option>
+                      <option value=";g;fxl;">cal</option>
+                    </select>
+              </div>
+         
+             
+            </div>
+            <div class="form-item">
+              <label class="label">Preference 2</label>
+                  <select id="country" name="country">
+                    <option value="technical">technical</option>
+                    <option value="corporate">hni</option>
+                    <option value=";g;fxl;">cal</option>
+                  </select>
+            </div>
+            <label class="label">What do you know about Directorate of Almuni Affairs ?</label>
+            <textarea placeholder="Your answer ...."></textarea>
+            <label class="label">Why do you want to join Directorate of Almuni Affairs ?</label>
+            <textarea placeholder="Your answer ...."></textarea>
+            <label class="label">A newly updated Resume with all of your links ?[with access to all] </label>
+            <div class="form-item box-item">
+              <input
+                type="email"
+                name="link"
+                placeholder="Google drive link"
+                value=""
+                required=""
+                
+              />
+            
+            </div>
+            <div class="form-item" style="align-self: center;"> <input type="submit"
+              <span  id="submit" value="Submit" class="submit"></span>
+            </div>
+          </form>
+        </main>
+        <footer>
+          <p>Connect Us </p>
+          <a href="https://www.instagram.com/srmuaa/?hl=en"><i  class="fa fa-instagram" style="font-size:24px"></i></a>
+          <a href="https://www.linkedin.com/school/srmuaa/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+
+        </footer>
+        <!-- <i class="wave"></i> -->
+      </section>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzh2YRv1BQ9-sSSaN4L3ikr57QeU5JXweQpjcQ48mXknU9wPIXUpjkNl-1IR_QUvfA/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => (window.location.href = "thanks.html"))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
