@@ -295,6 +295,7 @@ h1 {
 
 .nav-wrapper h1{
   font-size: small;
+  text-align: center
   ;}
 
 	.nav-tabs {
@@ -1146,7 +1147,11 @@ background-color:#d78b8b;
 
 @media screen and (max-width: 800px){
   .six h1{
-    font-size:x-large;
+    font-size: 30px;
+  }
+
+  .six h1 span{
+    font-size: 20px;
   }
 }
 
@@ -1155,7 +1160,7 @@ background-color:#d78b8b;
 
 .btn-container{
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 33px;
 }
 
 
