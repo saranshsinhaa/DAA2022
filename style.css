@@ -429,14 +429,21 @@ h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+.cd-timeline-img.cd-open {
+  background: #2196F3;
 }
-.cd-timeline-img.cd-movie {
+.cd-timeline-img.cd-close {
   background: #c03b44;
 }
 .cd-timeline-img.cd-location {
   background: #f0ca45;
+}
+.cd-timeline-img.cd-result {
+  background: #10CC52;
+}
+.cd-timeline-img.cd-orientation {
+
+background: #FF644E;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
