@@ -526,6 +526,8 @@ background: #FF644E;
   box-shadow: 0 3px 0 #d7e4ed;
   color: white;
 }
+
+
 .cd-timeline-content::after {
   clear: both;
   content: "";
