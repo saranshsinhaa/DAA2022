@@ -18,7 +18,12 @@ body {
 
 }
 
-
+.headText{
+  
+  src: url('/assets/bankgothic-regular.ttf');
+  letter-spacing: 2.5px;
+  
+}
 
 /* ticker-------- */
 @-webkit-keyframes ticker {
@@ -363,7 +368,7 @@ h1 {
   padding: 2em 2em;
   margin-top: 2em;
   margin-bottom: 2em;
-  background-color: #C2D5EF;
+  background-color: #8D86C9;
   border-radius: 20px;
 }
 #cd-timeline::before {
@@ -924,7 +929,7 @@ footer{
   
  .footer-distributed h3{
   color:  #ffffff;
-  font: normal 36px 'Cookie', cursive;
+  font: normal 30px 'Raleway';
   margin: 0;
  }
   
@@ -978,6 +983,7 @@ footer{
   
  .footer-distributed .footer-center p{
   display: inline-block;
+  font-weight: normal;
   color: #ffffff;
   vertical-align: middle;
   margin:0;
@@ -1103,17 +1109,23 @@ h1 em {
 
 .six h1 {
   text-align: center;
+  
   color:#222; font-size:60px; font-weight:400;
+  font-weight: bold;
   text-transform: uppercase;
-  word-spacing: 1px; letter-spacing:2px; color:#c50000;
+  word-spacing: 1px; letter-spacing:2px; color:#f81010;
 }
+
+
+
 .six h1 span {
   line-height:2em; padding-bottom:15px;
   text-transform: none;
-  font-size:.7em;
+  padding-top: 6px;
+  font-size:.37.5px;
   font-weight: normal;
   font-style: italic; font-family: "Playfair Display","Bookman",serif;
-  color:#999; letter-spacing:-0.005em; word-spacing:1px;
+  color:white; letter-spacing:-0.005em; word-spacing:1px;
   letter-spacing:none;
 }
 .six h1:after, .six h1:before {
@@ -1143,22 +1155,24 @@ background-color:#d78b8b;
 
 .btn-container{
   text-align: center;
+  margin-bottom: 15px;
 }
+
 
 .pill-btn{
   display: inline-block;
   box-sizing: border-box;
   height: 70px;
   line-height: 64px;
-  background: #6188FF;
+  background: #8D86C9;
   padding: 0px 30px;
   border-radius: 999em;
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-size: 16px;
       vertical-align: bottom;
     white-space: nowrap;
-  border: 3px solid #5C81F2;
+  /* border: 3px solid #5C81F2; */
   font-family: lato;
   letter-spacing: 2px;
   transition: .15s background-color,.15s border-color,.15s color,.15s fill;
@@ -1260,6 +1274,8 @@ body{
 
 .faqHead{
   margin-bottom: 10px;
+  font-family: "Raleway",sans-serif;
+  font-weight: bold;
 }
 
 .accordion-content{
@@ -1321,6 +1337,7 @@ button.accordion.is-open {
 
 
 .wrapper {
+
   text-align: center;
   max-width: 80em;
   margin: 0 auto; }
@@ -1388,3 +1405,11 @@ button.accordion.is-open {
       .overlay-img{
         margin: 8px;
       }
+
+
+.wrapper h1{
+  font-family: "Raleway",sans-serif;
+  font-weight: bold;
+
+}
+
